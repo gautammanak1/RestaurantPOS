@@ -2234,8 +2234,8 @@ textarea.input-field {
 }
 
 .footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
+  /* background-color: #33383b; */
+  color: #2D1E16;
   font-size: 25px;
   width: 40px;
   height: 40px;
@@ -2314,10 +2314,10 @@ textarea.input-field {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #33383b;
+  /* background-color: #33383b; */
   border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 30px;
+  color: #2D1E16;
   text-align: center;
   line-height: 35px;
   margin-right: 3px;
