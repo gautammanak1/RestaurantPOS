@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Andhra Dining</title>
+  <meta name="title" content="Andhra Dining">
+  <meta name="description" content="Thisis a website showing Andhra food">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ANDHRA DINING</p>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <p style="font-size: 30px;">ANDHRA DINING</p>
+        <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+      </a>
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+<!-- 
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a> -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Branches</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="ayurveda.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Ayurveda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+          
+
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Reservation</span>
+
+        <span class="text text-2" aria-hidden="true">Reservation</span>
+      </a>
+
+      <a href="#" class="menu-text">
+        <span class="text-3">Menu</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="padding-right: 100px; top:55%">
+              For the love of <br>
+              delicious food
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <!-- book a table corner image  -->
+        <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+
+      </section>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--
+        our story 
+      -->
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle-2 label-2-0">Why Choose Us</p>
+
+          <h1 class="headline-1 section-title">Our Story</h1>
+
+          <h2 style="color:#A07E55">Welcome to Andhra Dining<br />
+    A Culinary Journey Infused with Passion and Tradition</h2><br />
+    <div style="color:#2D1E16">
+    <p>Established in 2009 by Paramata Saradhi, Andhra Dining is more than just a restaurant – it's a culinary journey infused with passion and tradition. Saradhi's story began when he embarked on a journey from India to Japan for his studies in 1998. Amidst the bustling streets of Japan, he found himself yearning for the tastes and aromas of home. Disconnected from his Indian roots, Saradhi longed for the comfort of familiar flavors and the warmth of his community.</p><br />
+    
+    <p>It was this longing that ignited his adventure. Driven by his love for Indian cuisine, Saradhi embarked on a quest to share the authentic flavors of Andhra Pradesh, his homeland. Armed with an array of spices and a passion for Andhra cuisine, what started as sharing his home-cooked dishes among friends soon evolved into a mission to introduce Japan to the rich tapestry of South Indian flavors and create a sense of community.</p><br />
+    
+    <p>At Andhra Dining, we are more than just a restaurant – we are storytellers, weaving tales of tradition and taste with every dish we serve. Steering away from the stereotypical butter chicken and tandoori, our menu focuses on an array of authentic Andhra dishes, each meticulously prepared with the finest ingredients, with flavors that can only be found in Andhra Dining.</p><br />
+    
+    <p>We invite you to be a part of our story by experiencing the warmth and hospitality of Indian culture, right here in Tokyo. From our signature biryanis to our spicy curries, every dish at Andhra Dining is a celebration of flavor, crafted with love and served with pride. Whether you're a seasoned foodie or new to Indian cuisine, we invite you to join us on a culinary adventure like no other. </p><br />
+     <p> Welcome to Andhra Dining.</p>
+
+          </div>
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color:#A07E55">
+        <div class="container">
+          <div class="about-content">
+            <h1 style="font-size: 24px;" class=" section-subtitle-2" id="about-label">Our Chefs</h1>
+
+            <h2 class="body-1">The Heartbeat of Andhra Dining</h2>
+            <p class="section-text">
+              <strong>Experience the Culinary Symphony</strong>
+              Our chefs bring a unique blend of skill, creativity, and passion to our kitchen. Trained in the artistry of Indian traditional cooking, they master techniques and experiment with innovative flavors, ensuring every bite is a symphony of flavor.
+      
+              <strong>Commitment to Quality</strong>
+              With unwavering dedication, our chefs carefully curate each dish, showcasing a deep respect for ingredients. They select only the best quality spices, creating their own blend for the most original taste.
+      
+              <strong>Elevating Dining Excellence</strong>
+              The commitment to excellence shines through in every dish, enhancing the dining experience and showcasing the vibrant diversity of South Indian cuisine.
+            </p>
+            <div class="contact-label"></div>
+      
+          </div>
+      
+          <figure class="about-banner">
+            <img src="./assets/images/chef.jpeg" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+            <!-- <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div> -->
+          </figure>
+      
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+        </div>
+      </section>
+
+
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about" style="background-color:#A07E55">
+        <div class="container">
+          <figure class="chef-img">
+            <img src="./assets/images/chef2.png" width="600" height="600" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+            <!-- <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div> -->
+          </figure>
+          
+          <div class="about-content-1">
+            <h1 style="font-size: 24px;" class=" section-subtitle-2" id="about-label">Head Chef</h1>
+
+            <h2 class="body-1">Ramayana</h2>
+            <p class="about-banner-1">
+              <strong>Experience the Culinary Symphony</strong>
+              Our chefs bring a unique blend of skill, creativity, and passion to our kitchen. Trained in the artistry of Indian traditional cooking, they master techniques and experiment with innovative flavors, ensuring every bite is a symphony of flavor.
+      
+              <strong>Commitment to Quality</strong>
+              With unwavering dedication, our chefs carefully curate each dish, showcasing a deep respect for ingredients. They select only the best quality spices, creating their own blend for the most original taste.
+      
+              <strong>Elevating Dining Excellence</strong>
+              The commitment to excellence shines through in every dish, enhancing the dining experience and showcasing the vibrant diversity of South Indian cuisine.
+            </p>
+            <div class="contact-label"></div>
+      
+          </div>
+      
+          
+      
+         
+        </div>
+         <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+      </section>
+
+
+       <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle-2 label-2-0">Achievements</p>
+
+          <h2 class="headline-1 section-title">Awards</h2>
+
+          <p class="section-text2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting <br />industry lorem Ipsum has been the industrys
+            standard dummy text ever.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/awards.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Award 1</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/awards.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Award 2</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/awards.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Award 3</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim"> -->
+
+        </div>
+      </section>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

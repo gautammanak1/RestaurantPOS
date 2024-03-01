@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Andhra Dining</title>
+  <meta name="title" content="Andhra Dining">
+  <meta name="description" content="Thisis a website showing Andhra food">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ANDHRA DINING</p>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <p style="font-size: 30px;">ANDHRA DINING</p>
+        <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+      </a>
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+<!-- 
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a> -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Branches</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="ayurveda.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Ayurveda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+          
+
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Reservation</span>
+
+        <span class="text text-2" aria-hidden="true">Reservation</span>
+      </a>
+
+      <a href="#" class="menu-text">
+        <span class="text-3">Menu</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="padding-right: 100px; top:55%">
+              For the love of <br>
+              delicious food
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <!-- book a table corner image  -->
+        <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+
+      </section>
+
+
+  </section>
+  <section class="section features text-center" aria-label="features">
+    
+
+  <section class="ag-photo-gallery-block">
+    <div class="container">
+
+      <p class="section-subtitle-2 body-1" style="color:#6A432A">Our Gallery</p>
+    <div class="ag-format-container">
+      <div class="ag-photo-gallery_list">
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__wide">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="/assets/images/istockphoto-1411971240-612x612.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item">
+          <figure class="ag-photo-gallery_figure">
+           
+                <img src="/assets/images/restaurant-interiors-11.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+          
+              <img src="/assets/images/1.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__middle">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="/assets/images/27OFF-1-0d29-superJumbo.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/2.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__wide">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/3.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/4.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/5.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__middle">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/25.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/6.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__wide">
+          <figure class="ag-photo-gallery_figure">
+          
+              <img src="assets/images/7.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item">
+          <figure class="ag-photo-gallery_figure">
+         
+              <img src="assets/images/8.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/9.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__middle">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/10.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+          
+              <img src="assets/images/11.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__wide">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/12.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/13.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__narrow">
+          <figure class="ag-photo-gallery_figure">
+            
+              <img src="assets/images/14.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+  
+        <div class="ag-photo-gallery_item ag-photo-gallery_item__middle">
+          <figure class="ag-photo-gallery_figure">
+           
+              <img src="assets/images/15.jpg" class="ag-photo-gallery_img" alt="" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<script src="./assets/js/script.js"></script>
+
+<!-- 
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

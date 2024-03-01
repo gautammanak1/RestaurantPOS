@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Andhra Dining</title>
+  <meta name="title" content="Andhra Dining">
+  <meta name="description" content="Thisis a website showing Andhra food">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./fav.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ANDHRA DINING</p>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <p style="font-size: 30px;">ANDHRA DINING</p>
+        <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+      </a>
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+<!-- 
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a> -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Branches</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="ayurveda.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Ayurveda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+          
+
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Reservation</span>
+
+        <span class="text text-2" aria-hidden="true">Reservation</span>
+      </a>
+
+      <a href="#" class="menu-text">
+        <span class="text-3">Menu</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="padding-right: 100px; top:55%">
+              For the love of <br>
+              delicious food
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <!-- book a table corner image  -->
+        <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+
+      </section>
+
+ 
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle-2 label-2-0">Andhra Dining</p>
+
+          <h2 class="headline-1 section-title">Philosophy</h2>
+
+          <p class="section-text">
+            Established in 2009 by Paramata Saradhi, Andhra Dining is more than just a restaurant – it's a culinary journey infused with passion and
+            tradition.<br /><br />
+            Saradhi's story began when he embarked on a journey from India to Japan for his studies in 1998. Amidst the bustling streets of Japan, he
+            found himself yearning for the tastes and aromas of home. Disconnected from his Indian roots, Saradhi longed for the comfort of familiar
+            flavors and the warmth of his community. It was this longing that ignited his adventure.<br /><br />
+            Driven by his love for Indian cuisine, Saradhi embarked on a quest to share the authentic flavors of Andhra Pradesh, his homeland. Armed
+            with an array of spices and a passion for Andhra cuisine, what started as sharing his home cooked dishes among friends soon evolved into a
+            mission to introduce Japan to the rich tapestry of South Indian flavors and create a sense of community.<br /><br />
+            At Andhra Dining, we are more than just a restaurant – we are storytellers, weaving tales of tradition and taste with every dish we serve.
+            Steering away from the stereotypical butter chicken and tandoori, our menu focuses on an array of authentic Andhra dishes, each
+            meticulously prepared with the finest ingredients, with flavors that can only be found in Andhra Dining. We invite you to be a part of our
+            story by experiencing the warmth and hospitality of Indian culture, right here in Tokyo. From our signature biryanis to our spicy curries,
+            every dish at Andhra Dining is a celebration of flavor, crafted with love and served with pride. Whether you're a seasoned foodie or new to
+            Indian cuisine, we invite you to join us on a culinary adventure like no other.<br /><br />
+            <span class="welcome-text">Welcome to Andhra Dining</span>
+          </p>
+
+          
+
+        </div>
+      </section>
+
+
+<!-- 
+        - #News And Info 
+      -->
+
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle-2 label-2-0 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">News and Info</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder1" style="--width: 350; --height: 350;">
+                  
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">  Sari Purdue</p>
+
+                  <h3 class="card-title title-2 text-center">
+                
+"Meals with my family are always extra special because of the beautiful plates I got from Custom & Nooke."
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder1" style="--width: 350; --height: 350;">
+                 
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Musa Watson</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    "Very pleased with my new sofa--the quality is great, it's comfortable, and elevates the look of my home."
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder1" style="--width: 350; --height: 350;">
+                  
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Freya Moore</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    
+"I love how timeless my decor are. I just need to move things around to update the look of
+my space."
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Explore More </span>
+
+            <span class="text text-2" aria-hidden="true">Explore More</span>
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+    <!-- 
+        - #end
+      -->
+
+      <!-- 
+        - #Reviews
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/reviewimg.jpg')" aria-label="testimonials">
+        <p class="section-subtitle-2 label-2 text-center">Testimonials</p>
+        <div class="container">
+          <div class="reviews-text">
+            Reviews
+          </div><br />
+
+          
+
+          <p class="headline-2 testi-text">
+            
+            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
+            extraordinary.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Sam Jhonson</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #Contact us
+      -->
+      <section class="reservation" style="background-color: #E7E5DC;padding: 10px;">
+        <div id="contactus" class="container">
+
+          <div class="form reservation-form bg-black-10-1">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-10-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary-2">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-10-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Lorpem jasoljr fnkalm <br>
+                iknfckjsdv kjdsnc
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </section>
+
+ 
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
