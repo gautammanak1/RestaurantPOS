@@ -47,6 +47,24 @@ const addEventOnElements = function (elements, eventType, callback) {
  * NAVBAR
  */
 
+document.addEventListener('DOMContentLoaded', function () {
+    setActiveNavLink();
+});
+
+function setActiveNavLink() {
+    const pathName = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar-link');
+
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (pathName.endsWith(linkPath)) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
