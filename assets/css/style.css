@@ -179,7 +179,7 @@ html {
 
 body {
   /* background-color: var(--eerie-black-1); */
-  color: var(--white);
+  color:#2D1E16;
   font-family: var(--fontFamily-dm_sans);
   font-size: var(--fontSize-body-4);
   font-weight: var(--weight-regular);
@@ -229,8 +229,9 @@ body.nav-active {
   line-height: var(--lineHeight-2);
 }
 
+
 .title-2-0 {
-  color: whitesmoke;
+  color:#2D1E16;
   font-family: var(--fontFamily-forum);
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-2);
@@ -366,7 +367,7 @@ body.nav-active {
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
-  margin-block-end: 80px;
+  margin-block-end: 30px;
   top: 50%;
 
 }
@@ -385,7 +386,7 @@ body.nav-active {
 
 .section-subtitle-2 {
   position: relative;
-  color: var(--white);
+  color:#6A432A;
   font-weight: var(--weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letterSpacing-2);
@@ -560,7 +561,14 @@ body.nav-active {
 .section-text2 {
   width: 100%;
   margin-bottom: 50px;
-  color: #6A432A;
+  color: #2D1E16;
+}
+
+.section-text-3 {
+  margin-block-end: 40px;
+  color: #F2F2F2;
+  font-family: var(--fontFamily-forum);
+  font-size: 2.1rem;
 }
 
 .hover\:shine {
@@ -574,7 +582,7 @@ body.nav-active {
   left: 0;
   width: 50%;
   height: 100%;
-  background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.4) 100%);
+  background-image: linear-gradient(to right, transparent 0%, rgba(62, 62, 62, 0.4) 100%);
   transform: skewX(-0.08turn) translateX(-180%);
 }
 
@@ -587,13 +595,13 @@ body.nav-active {
   aspect-ratio: var(--width) / var(--height);
   overflow: hidden;
   /* background-color: #2D1E16; */
-  box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 2);
+  /* box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 2); */
 }
 
 .img-holder1 {
   aspect-ratio: var(--width) / var(--height);
   overflow: hidden;
-  background-color: #A07E55;
+  background-color: #E7E5DC;
 }
 
 .btn-text {
@@ -707,7 +715,7 @@ body.nav-active {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--gold-crayola);
+  background-color: #E7E5DC;
   z-index: 10;
   display: grid;
   place-content: center;
@@ -1505,12 +1513,12 @@ body.nav-active {
 }
 
 .menu-card .span {
-  color:#6A432A;
+  color: #6A432A;
   margin-block: 10px;
 }
 
 .menu-card .card-text {
-  color:#2D1E16;
+  color: #2D1E16;
   line-height: var(--lineHeight-4);
 }
 
@@ -1678,11 +1686,11 @@ textarea.input-field {
 }
 
 .feature-item:nth-child(2n+1) .feature-card {
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .feature-item:nth-child(2n) .feature-card {
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .feature-card .card-icon {
@@ -1700,7 +1708,7 @@ textarea.input-field {
 }
 
 .feature-card .card-text {
-  color:#2D1E16;
+  color: #2D1E16;
   line-height: var(--lineHeight-6);
 }
 
@@ -1719,8 +1727,8 @@ textarea.input-field {
 .event-card {
   position: relative;
   overflow: hidden;
-  box-shadow: 12px 14px 8px rgba(0, 0, 0, 0.1);
-  ;
+  /* box-shadow: 12px 14px 8px rgba(0, 0, 0, 0.1); */
+  
 }
 
 .event-card .card-content {
@@ -1736,7 +1744,7 @@ textarea.input-field {
   top: 30px;
   left: 25px;
   padding: 5px 10px;
-  color: whitesmoke;
+  color: #2D1E16;
   /* background-color: var(--black); */
   font-weight: var(--weight-bold);
   letter-spacing: var(--letterSpacing-1);
@@ -1744,7 +1752,7 @@ textarea.input-field {
 }
 
 .event-card .card-subtitle {
-  color: whitesmoke;
+  color: #2D1E16;
   text-transform: uppercase;
   font-weight: var(--weight-bold);
   letter-spacing: var(--letterSpacing-2);
@@ -2352,6 +2360,7 @@ textarea.input-field {
  * responsive for larger than 768px screen
  */
 
+
 @media (min-width: 768px) {
 
   /**
@@ -2406,7 +2415,7 @@ textarea.input-field {
   .hero .slider-bg {
     width: 100%;
     /* Take full width on small screens */
-    height: 100vh;
+    height: 100%;
   }
 
 
@@ -2608,6 +2617,7 @@ textarea.input-field {
   .testi-text {
     max-width: 910px;
     margin-inline: auto;
+    color:#F2F2F2;
   }
 
 
@@ -2800,7 +2810,7 @@ textarea.input-field {
    */
 
   .about {
-    padding-block: 100px 100px;
+    padding-block: 100px 0px;
   }
 
 
@@ -2871,7 +2881,6 @@ textarea.input-field {
   .navbar {
     margin-inline: auto;
   }
-
 
 
   /**

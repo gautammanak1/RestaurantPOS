@@ -60,8 +60,8 @@
 
     .item {
       position: absolute;
-      width: 200px;
-      height: 320px;
+      width: 300px;
+      height: 350px;
       text-align: justify;
       background-color: #A07E55;
       border-radius: 10px;
@@ -150,12 +150,28 @@
       text-align: center;
       box-sizing: border-box;
       border-radius: 10px;
+      padding:10px 50px 10px 50px;
     }
 
     /* Add styles for the text inside the text content */
     .text-content h1 {
       font-size: 2rem;
     }
+
+    .branches-hero {
+      color: var(--white);
+      font-family: var(--fontFamily-forum);
+      font-size: var(--fontSize-display-1);
+      line-height: var(--lineHeight-1);
+    }
+    .branches-p {
+      width:50%;
+    }
+
+    .hero .slider-item.active .branches-hero {
+      animation-delay: 1000ms;
+    }
+
   </style>
 
 </head>
@@ -284,67 +300,55 @@
           <li class="slider-item active" data-hero-slider-item>
 
             <div class="slider-bg">
-              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+              <img src="./assets/images/banner.jpg" width="1880" height="950" alt="" class="img-cover">
             </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
-
-            <h1 class="display-1 hero-title slider-reveal" style="padding-right: 100px; top:55%">
-              For the love of <br>
-              delicious food
-            </h1>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            <div class="flex flex-col items-start justify-start pl-20 pb-20" style="padding-top: 20rem;">
+              <h1 class="branches-hero slider-reveal">
+                Experience
+              </h1>
+              <h1 class="branches-hero slider-reveal">
+                Andhra
+              </h1>
+              <h1 class="branches-hero slider-reveal">
+                in Japan
+              </h1>
+              <p class="my-6 branches-p" style="color: white;">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took.
+                </p>
+              
+              <a href="#" class="btn btn-secondary"style="width:50%; margin-left: 0; border: 2px solid white;">
+                <span class="text text-1">Make a Reservation</span>
+              
+                <span class="text text-2" aria-hidden="true">Make a Reservation</span>
+              </a>
             </div>
-
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
-
-            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
-
-            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
-              Where every flavor <br>
-              tells a story
-            </h1>
-
-
           </li>
 
         </ul>
 
-        <button class="slider-btn b-prev" aria-label="slide to previous" data-prev-btn>
+        <button class="" aria-label="slide to previous" data-prev-btn>
           <ion-icon name="chevron-back"></ion-icon>
         </button>
 
-        <button class="slider-btn b-next" aria-label="slide to b-next" data-next-btn>
+        <button class="t" aria-label="slide to next" data-next-btn>
           <ion-icon name="chevron-forward"></ion-icon>
         </button>
-
-        <!-- book a table corner image  -->
-        <!-- <a href="#" class="hero-btn has-after">
-          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
-
-          <span class="label-2 text-center span">Book A Table</span>
-        </a> -->
-
       </section>
+
+      <!-- <section class="hero text-center" aria-label="home" id="home">
+  <div class="banner relative flex flex-col items-center justify-center w-full h-full">
+    <img class="w-full h-full object-cover" src="assets/images/banner.jpg" alt="banner">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 flex flex-col items-start justify-center text-white text-start px-4 w-50px">
+      <h1 class="display-1 hero-title mb-4">Experience Andhra in Japan</h1>
+      <p class="mb-4">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+        it to make a type specimen book.</p>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Make a reservation</button>
+    </div>
+  </div>
+</section> -->
 
 
       <section class="section event" aria-label="event">
