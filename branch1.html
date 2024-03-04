@@ -54,6 +54,56 @@
             height: 550px;
             /* Set the desired height */
         }
+        .file-body {
+            display: flex;
+            font-weight: 300;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x: hidden;
+            gap:100px;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin: 10px;
+            transform: translateX(400%);
+            transition: transform 0.4s ease;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+
+        .box:nth-of-type(even) {
+            transform: translateX(-400%);
+        }
+
+        .box.show {
+            transform: translateX(0);
+        }
+        .order-flex-container {
+            display: flex;
+        }
+
+        .box-with-para,
+        .box-with-html {
+            width: 100%;
+            opacity: 0;
+            transform: translateX(400%);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            height: 100%; /* Set a height for equal height */
+            box-sizing: border-box;
+        }
+
+        .box-with-para.show,
+        .box-with-html.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
     </style>
 
 </head>
@@ -168,10 +218,6 @@
         </div>
     </header>
 
-
-
-
-
     <main>
         <article>
 
@@ -197,45 +243,60 @@
                     </li>
             
                 </ul>
-            
-                <button class="" aria-label="slide to previous" data-prev-btn>
-                    <ion-icon name="chevron-back"></ion-icon>
-                </button>
-            
-                <button class="t" aria-label="slide to next" data-next-btn>
-                    <ion-icon name="chevron-forward"></ion-icon>
-                </button>
             </section>
 
+            <section class="text-center mb-20">
+                <h1 class="section-subtitle-2 label-2-0">Popular</h1>
+                <h2 class="headline-1 section-title">Our Specialities</h2>
+            </section>
+
+            <div class="file-body">
+
+                <div class="order-flex-container">
+                    <div class="box box-with-html" x-data="{show: false}" :class="{ 'show': show }"
+                        @scroll.window="show = window.scrollY > window.innerHeight / 5 * 4">
+                        <img src="assets/images/Tandoori-Chicken-Recipe-500x375.jpg" alt="HTML Image">
+                    </div>
+                    <div class="flex flex-col items-start justify-start">
+                        <h2 class="headline-1 section-title">Tandoori</h2>
+                        <p class="" style="width:300px">A small description of Tandoori and why it is our specialty. and any if any TV features
+                            we can add
+                            it here</p>
+                        <a href="#" class="btn btn-primary" style="margin:40px 0px 0px 0px">
+                            <span class="text text-1" style="color:black">Order </span>
+                        
+                            <span class="text text-2" aria-hidden="true">Order</span>
+                        </a>
+                    </div>
+                
+                </div>
+            
+                <div class="order-flex-container">
+                    <div class="box box-with-para" x-data="{show: false}" :class="{ 'show': show }"
+                        @scroll.window="show = window.scrollY > window.innerHeight / 5 * 4">
+                        <div class="flex flex-col items-start justify-start">
+                            <h2 class="headline-1 section-title">Biryani</h2>
+                            <p class="" style="width:300px">A small description of Biryani and why it is our specialty. and any if any TV
+                                features we can add
+                                it here</p>
+                            <a href="#" class="btn btn-primary" style="margin:40px 0px 0px 0px">
+                                <span class="text text-1" style="color:black">Order </span>
+                            
+                                <span class="text text-2" aria-hidden="true">Order</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="box box-with-html" x-data="{show: false}" :class="{ 'show': show }"
+                        @scroll.window="show = window.scrollY > window.innerHeight / 5 * 4">
+                        
+                        <img src="assets/images/Hyderbadi-Chicken-Biryani-scaled.jpg" alt="HTML Image">
+                    </div>
+                </div>
 
 
-
-
-
-
-    <!-- 
-        - #MENU
-      -->
-<!-- <div class="container">
-    <section class="section menu" aria-label="menu-label" id="menu">
-        <div class="container">
-
-            <p class="section-subtitle-2 label-2-0 text-center">Special Selection</p>
-            <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
-
-            <ul class="grid-list" id="menuList">
-                Menu items will be dynamically added here using JavaScript
-            </ul>
-
-            <a href="#" class="btn btn-primary">
-                <span class="text text-1">View All Menu</span>
-                <span class="text text-2" aria-hidden="true">View All Menu</span>
-            </a>
-
-        </div>
-    </section>
-</div> -->
-
+                
+            </div>
 
 <!-- ------- contact form -------  -->
 
@@ -347,55 +408,27 @@
 
 
  
-<script>
-    // Define a function to generate menu items for Branch1
-    function generateMenu(branchName, menuData) {
-        const menuList = document.getElementById('menuList');
-        menuList.innerHTML = ''; // Clear existing menu items
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const boxes = document.querySelectorAll('.box');
 
-        // Loop through the menuData array and dynamically generate HTML for each menu item
-        menuData.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-          <div class="menu-card hover:card">
-            <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-              <img src="${item.image}" width="100" height="100" loading="lazy" alt="${item.name}" class="img-cover">
-            </figure>
-            <div>
-              <div class="title-wrapper">
-                <h3 class="title-3">
-                  <a href="#" class="card-title">${item.name}</a>
-                </h3>
-                ${item.badge ? `<span class="badge label-1">${item.badge}</span>` : ''}
-                <span class="span title-2">${item.price}</span>
-              </div>
-              <p class="card-text label-1">${item.description}</p>
-            </div>
-          </div>
-        `;
-            menuList.appendChild(listItem);
+            window.addEventListener('scroll', checkBoxes);
+
+            function checkBoxes() {
+                const triggerBottom = (window.innerHeight / 5) * 4;
+
+                boxes.forEach((box) => {
+                    const boxTop = box.getBoundingClientRect().top;
+
+                    if (boxTop < triggerBottom) {
+                        box.classList.add('show');
+                    } else {
+                        box.classList.remove('show');
+                    }
+                });
+            }
         });
-
-        // You can customize the branch name display as needed
-        console.log(`Showing menu for ${branchName}`);
-    }
-
-    // Example menu data for Branch1
-    const branch1MenuData = [
-            { name: 'Greek Salad', image: './assets/images/menu-1.png', price: '$25.50', description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.', badge: 'Seasonal' },
-            { name: 'Lasagne', image: './assets/images/menu-2.png', price: '$40.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.' },
-            { name: 'Butternut Pumpkin', image: './assets/images/menu-3.png', price: '$10.00', description: 'Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.' },
-            { name: 'Tokusen Wagyu', image: './assets/images/menu-4.png', price: '$39.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.', badge: 'New' },
-            { name: 'Olivas Rellenas', image: './assets/images/menu-5.png', price: '$25.00', description: 'Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.' },
-            { name: 'Opu Fish', image: './assets/images/menu-6.png', price: '$49.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices' }
-        ];
-        generateMenu('Branch1', branch1MenuData);
-
-    // Generate the menu for Branch1
-    generateMenu('Branch1', branch1MenuData);
-</script>
-
-
+    </script>
     <script src="assets/js/script.js"></script>
 
 </body>
