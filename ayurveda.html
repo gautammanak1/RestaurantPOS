@@ -1,218 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayurveda</title>
-    <link rel="stylesheet" href="assets/css/ayurveda.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..................." crossorigin="anonymous" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayurveda</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/ayurveda.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..................." crossorigin="anonymous" />
 
-  </head>
-  <body>
-    <header></header>
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+  <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg" />
+</head>
 
-    <!-- carousel -->
-    <div class="carousel">
-      <!-- list item -->
-      <div class="list">
-        <div class="item">
-          <img src="./assets/images/turmeric.png" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Turmeric</div>
-            <div class="des">
-              <!-- lorem 50 -->
-              - Known for its vibrant golden color, turmeric contains curcumin,
-              a potent antioxidant and anti-inflammatory compound. Turmeric is
-              believed to support joint health, aid digestion, boost immunity,
-              and promote overall well-being.
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/ginger.jpg" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Ginger</div>
-            <div class="des">
-              With its warming properties, ginger is valued for its ability to
-              soothe digestive issues such as nausea, indigestion, and bloating.
-              Ginger also has anti-inflammatory and immune-boosting properties,
-              making it a popular remedy for colds and flu.
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cumin.jpg"  class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Cumin</div>
-            <div class="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-              sequi, rem magnam nesciunt minima placeat, itaque eum neque
-              officiis unde, eaque optio ratione aliquid assumenda facere ab et
-              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
-              nisi reprehenderit tempora at laborum natus unde. Ut,
-              exercitationem eum aperiam illo illum laudantium?
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cloves.jpg"  class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Cloves</div>
-            <div class="des">
-              These aromatic flower buds are packed with antioxidants and have
-              potent anti-inflammatory and analgesic properties. Cloves are
-              often used to relieve toothaches, aid digestion, and support oral
-              health.
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/coriander.png"  class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Coriander</div>
-            <div class="des">
-              Both the seeds and leaves of coriander offer numerous health
-              benefits. Coriander seeds are known for their digestive properties
-              and may help alleviate symptoms of irritable bowel syndrome (IBS)
-              and other gastrointestinal issues. Coriander leaves are rich in
-              vitamins and antioxidants and may help lower cholesterol and blood
-              pressure.
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cardamom.jpg" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
-          <div class="content">
-            <div class="author">Ayurveda</div>
-            <div class="title">Cardamom</div>
-            <div class="des">
-              Known as the "queen of spices," cardamom is prized for its
-              distinct flavor and medicinal properties. It is often used to aid
-              digestion, freshen breath, and alleviate symptoms of respiratory
-              conditions like coughs and congestion.
-            </div>
-            <div class="buttons">
-              <button>SEE MORE</button>
-              <!-- <button>SUBSCRIBE</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- list thumnail -->
-      <div class="thumbnail">
-        <div class="item">
-          <img src="./assets/images/turmeric.png" />
-          <div class="content">
-            <div class="title">Turmeric</div>
-            <div class="description">Golden Spice</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/ginger.jpg" />
-          <div class="content">
-            <div class="title">Ginger</div>
-            <div class="description">Elixir Root</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cumin.jpg" />
-          <div class="content">
-            <div class="title">Cumin</div>
-            <div class="description">Aromatic Seed</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cloves.jpg" />
-          <div class="content">
-            <div class="title">Cloves</div>
-            <div class="description">Spice Buds</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/coriander.png" />
-          <div class="content">
-            <div class="title">Coriander</div>
-            <div class="description">Herb Harmony</div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="./assets/images/cardamom.jpg" />
-          <div class="content">
-            <div class="title">Cardamom</div>
-            <div class="description">Scented Pods</div>
-          </div>
-        </div>
-      </div>
-      <!-- next prev -->
+<body>
+  <!-- 
+    - #PRELOADER
+  -->
 
-      <div class="arrows">
-        <button id="prev"><</button>
-        <button id="next">></button>
-      </div>
-      <!-- time running -->
-      <div class="time"></div>
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ANDHRA DINING</p>
+  </div>
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <p style="font-size: 30px">ANDHRA DINING</p>
+        <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <!-- 
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+          </a> -->
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="branches.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Branches</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="ayurveda.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Ayurveda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="reservation.html" class="btn btn-secondary">
+        <span class="text text-1">Reservation</span>
+
+        <span class="text text-2" aria-hidden="true">Reservation</span>
+      </a>
+
+      <!-- <a href="menu.html" class="menu-text">
+          <span class="text-3">Menu</span>
+        </a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
+  </header>
 
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
 
+      <section class="hero text-center" aria-label="home" id="home">
+        <ul class="hero-slider" data-hero-slider>
+          <li class="slider-item active" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover" />
+            </div>
 
+            <p class="label-2 section-subtitle slider-reveal">
+              Tradational & Hygine
+            </p>
 
-    <div class="footer">
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <h3>Andhra<span> Dining</span></h3>
-      <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Pricing</a>
-        <a href="#">About</a>
-        <a href="#">Faq</a>
-        <a href="#">Contact</a>
-      </p>
-      <div class="flex flex-row justify-start items-start my-10 gap-10 text-black">
-    <p>logo1</p>
-    <p>logo2</p>
-    <p>logo3</p>
-</div>
-      <p class="footer-company-name">Andhra Dining © 2024</p>
-    </div>
-    <div class="footer-center">
-    <!-- <div>
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br />
+              delicious food
+            </h1>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover" />
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">
+              delightful experience
+            </p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br />
+              the Seasons
+            </h1>
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover" />
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">
+              amazing & delicious
+            </p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br />
+              tells a story
+            </h1>
+          </li>
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <!-- book a table corner image -->
+        <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+      </section>
+
+      <!-- carousel -->
+      <div class="container">
+        <p class="section-subtitle-2 label-2-0 text-center pt-10">Andhra Spices</p>
+      </div>
+
+      <div class="scroll-text">
+        <div class="scrolling-text-container left display-1">
+          <marquee behavior="scroll" direction="left" scrollamount="20">
+            A Culinary Journey to the Soul of India!
+
+          </marquee>
+        </div>
+        <div class="scrolling-text-container right display-1">
+          <!-- <span>New Post</span> -->
+          <marquee behavior="" direction="right" scrollamount="20">From Our Kitchen to Your Heart
+          </marquee>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <div class="item">
+            <img src="./assets/images/turmeric.png" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Turmeric</div>
+              <div class="des">
+                <!-- lorem 50 -->
+                - Known for its vibrant golden color, turmeric contains
+                curcumin, a potent antioxidant and anti-inflammatory compound.
+                Turmeric is believed to support joint health, aid digestion,
+                boost immunity, and promote overall well-being.
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/ginger.jpg" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Ginger</div>
+              <div class="des">
+                With its warming properties, ginger is valued for its ability
+                to soothe digestive issues such as nausea, indigestion, and
+                bloating. Ginger also has anti-inflammatory and
+                immune-boosting properties, making it a popular remedy for
+                colds and flu.
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cumin.jpg" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Cumin</div>
+              <div class="des">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+                sequi, rem magnam nesciunt minima placeat, itaque eum neque
+                officiis unde, eaque optio ratione aliquid assumenda facere ab
+                et quasi ducimus aut doloribus non numquam. Explicabo,
+                laboriosam nisi reprehenderit tempora at laborum natus unde.
+                Ut, exercitationem eum aperiam illo illum laudantium?
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cloves.jpg" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Cloves</div>
+              <div class="des">
+                These aromatic flower buds are packed with antioxidants and
+                have potent anti-inflammatory and analgesic properties. Cloves
+                are often used to relieve toothaches, aid digestion, and
+                support oral health.
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/coriander.png" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Coriander</div>
+              <div class="des">
+                Both the seeds and leaves of coriander offer numerous health
+                benefits. Coriander seeds are known for their digestive
+                properties and may help alleviate symptoms of irritable bowel
+                syndrome (IBS) and other gastrointestinal issues. Coriander
+                leaves are rich in vitamins and antioxidants and may help
+                lower cholesterol and blood pressure.
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cardamom.jpg" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="content">
+              <div class="author">Ayurveda</div>
+              <div class="title">Cardamom</div>
+              <div class="des">
+                Known as the "queen of spices," cardamom is prized for its
+                distinct flavor and medicinal properties. It is often used to
+                aid digestion, freshen breath, and alleviate symptoms of
+                respiratory conditions like coughs and congestion.
+              </div>
+              <div class="buttons">
+                <button>SEE MORE</button>
+                <!-- <button>SUBSCRIBE</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <div class="item">
+            <img src="./assets/images/turmeric.png" />
+            <div class="content">
+              <div class="title">Turmeric</div>
+              <div class="description">Golden Spice</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/ginger.jpg" />
+            <div class="content">
+              <div class="title">Ginger</div>
+              <div class="description">Elixir Root</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cumin.jpg" />
+            <div class="content">
+              <div class="title">Cumin</div>
+              <div class="description">Aromatic Seed</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cloves.jpg" />
+            <div class="content">
+              <div class="title">Cloves</div>
+              <div class="description">Spice Buds</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/coriander.png" />
+            <div class="content">
+              <div class="title">Coriander</div>
+              <div class="description">Herb Harmony</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/images/cardamom.jpg" />
+            <div class="content">
+              <div class="title">Cardamom</div>
+              <div class="description">Scented Pods</div>
+            </div>
+          </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+          <button id="prev">
+            <</button>
+              <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+      </div>
+
+      <div class="footer">
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>Andhra<span> Dining</span></h3>
+            <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
+              <a href="#">About</a>
+              <a href="#">Faq</a>
+              <a href="#">Contact</a>
+            </p>
+            <div class="flex flex-row justify-start items-start my-10 gap-10 text-black">
+              <p>logo1</p>
+              <p>logo2</p>
+              <p>logo3</p>
+            </div>
+            <p class="footer-company-name">Andhra Dining © 2024</p>
+          </div>
+          <div class="footer-center">
+            <!-- <div>
        <i class="fas fa-map-marker-alt"></i>
         <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
       </div>
@@ -220,26 +409,33 @@
         <i class="fa fa-phone"></i>
         <p>+1.555.555.5555</p>
       </div> -->
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:support@company.com">support@company.com</a></p>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:support@company.com">support@company.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>About the company</span>
+              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+              euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </footer>
       </div>
-    </div>
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-      </p>
-      <div class="footer-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </footer>
-</div>
+    </article>
+  </main>
 
-    <script src="./assets/js/ayurveda.js"></script>
-  </body>
+  <script src="assets/js/script.js"></script>
+  <script src="./assets/js/ayurveda.js"></script>
+</body>
+
 </html>

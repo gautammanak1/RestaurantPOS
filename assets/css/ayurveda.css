@@ -1,10 +1,43 @@
+.scroll-text {
+    width: 100%;
+    margin: 0 auto;
+}
+.scrolling-text-container {
+    display: flex;
+    align-items: center;
+    /* background: whitesmoke; */
+    margin-top: 40px;
+    color:#A07E55;
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* .scrolling-text-container span {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 8px 20px;
+    background: #100;
+    color: black;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    font-weight: 600;
+} */
+
+.left span {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
 /* carousel */
 .carousel{
     height: 100vh;
-    margin-top: -50px;
+    margin-top: 100px;
     width: 100vw;
     /* overflow: hidden; */
     position: relative;
+    background-color: #E7E5DC;
 }
 
 .carousel-container {
@@ -219,7 +252,7 @@
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    /* background-color: #f1683a; */
     left: 0;
     top: 0;
 }

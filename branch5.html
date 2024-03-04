@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Andhra Dining</title>
+    <meta name="title" content="Andhra Dining">
+    <meta name="description" content="Thisis a website showing Andhra food">
+
+    <!-- 
+    - favicon
+  -->
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-..................." crossorigin="anonymous" />
+
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">ANDHRA DINING</p>
+    </div>
+
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <p style="font-size: 30px;">ANDHRA DINING</p>
+                <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+            </a>
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <!-- 
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a> -->
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link hover-underline active">
+                            <div class="separator"></div>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="about.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="branches.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Branches</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="ayurveda.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Ayurveda</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="gallery.html" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#contactus" class="navbar-link hover-underline">
+                            <div class="separator"></div>
+
+                            <span class="span">Contact Us</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+            <a href="#" class="btn btn-secondary">
+                <span class="text text-1">Reservation</span>
+
+                <span class="text text-2" aria-hidden="true">Reservation</span>
+            </a>
+
+            <!-- <a href="#" class="menu-text">
+        <span class="text-3">Menu</span>
+      </a> -->
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero text-center" aria-label="home" id="home">
+
+                <ul class="hero-slider" data-hero-slider>
+
+                    <li class="slider-item active" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt=""
+                                class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            For the love of <br>
+                            delicious food
+                        </h1>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt=""
+                                class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Flavors Inspired by <br>
+                            the Seasons
+                        </h1>
+
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+
+                        <div class="slider-bg">
+                            <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt=""
+                                class="img-cover">
+                        </div>
+
+                        <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">
+                            Where every flavor <br>
+                            tells a story
+                        </h1>
+
+
+                    </li>
+
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <!-- book a table corner image  -->
+                <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+
+            </section>
+            <div class="container">
+
+
+
+                <!-- 
+        - #MENU
+      -->
+
+                <section class="section menu" aria-label="menu-label" id="menu">
+                    <div class="container">
+
+                        <p class="section-subtitle-2 label-2-0 text-center">Special Selection</p>
+                        <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+                        <ul class="grid-list" id="menuList">
+                            <!-- Menu items will be dynamically added here using JavaScript -->
+                        </ul>
+
+                        <!-- <p class="menu-text text-center">
+                During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+            </p> -->
+
+                        <a href="#" class="btn btn-primary">
+                            <span class="text text-1">View All Menu</span>
+                            <span class="text text-2" aria-hidden="true">View All Menu</span>
+                        </a>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- -----footer----- -->
+
+            <div class="footer">
+                <footer class="footer-distributed">
+                    <div class="footer-left">
+                        <h3>Andhra<span> Dining</span></h3>
+                        <p class="footer-links">
+                            <a href="#" class="link-1">Home</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">About</a>
+                            <a href="#">Faq</a>
+                            <a href="#">Contact</a>
+                        </p>
+                        <div class="flex flex-row justify-start items-start my-10 gap-10 text-black">
+                            <p>logo1</p>
+                            <p>logo2</p>
+                            <p>logo3</p>
+                        </div>
+                        <p class="footer-company-name">Andhra Dining © 2024</p>
+                    </div>
+                    <div class="footer-center">
+                        <!-- <div>
+       <i class="fas fa-map-marker-alt"></i>
+        <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1.555.555.5555</p>
+      </div> -->
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:support@company.com">support@company.com</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer-company-about">
+                            <span>About the company</span>
+                            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu
+                            auctor lacus
+                            vehicula sit amet.
+                        </p>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                // Define a function to generate menu items for Branch1
+                function generateMenu(branchName, menuData) {
+                    const menuList = document.getElementById('menuList');
+                    menuList.innerHTML = ''; // Clear existing menu items
+
+                    // Loop through the menuData array and dynamically generate HTML for each menu item
+                    menuData.forEach(item => {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+              <img src="${item.image}" width="100" height="100" loading="lazy" alt="${item.name}" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title">${item.name}</a>
+                </h3>
+                ${item.badge ? `<span class="badge label-1">${item.badge}</span>` : ''}
+                <span class="span title-2">${item.price}</span>
+              </div>
+              <p class="card-text label-1">${item.description}</p>
+            </div>
+          </div>
+        `;
+                        menuList.appendChild(listItem);
+                    });
+
+                    // You can customize the branch name display as needed
+                    console.log(`Showing menu for ${branchName}`);
+                }
+
+                // Example menu data for Branch1
+                const branch1MenuData = [
+                    { name: 'Greek Salad', image: './assets/images/menu-1.png', price: '$25.50', description: 'Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.', badge: 'Seasonal' },
+                    { name: 'Lasagne', image: './assets/images/menu-2.png', price: '$40.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.' },
+                    { name: 'Butternut Pumpkin', image: './assets/images/menu-3.png', price: '$10.00', description: 'Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.' },
+                    { name: 'Tokusen Wagyu', image: './assets/images/menu-4.png', price: '$39.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.', badge: 'New' },
+                    { name: 'Olivas Rellenas', image: './assets/images/menu-5.png', price: '$25.00', description: 'Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.' },
+                    { name: 'Opu Fish', image: './assets/images/menu-6.png', price: '$49.00', description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices' }
+                ];
+                generateMenu('Branch1', branch1MenuData);
+
+                // Generate the menu for Branch1
+                generateMenu('Branch1', branch1MenuData);
+            </script>
+
+
+            <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

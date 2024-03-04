@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Andhra Dining</title>
+  <meta name="title" content="Andhra Dining">
+  <meta name="description" content="This is a website showing Andhra food">
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..................." crossorigin="anonymous" />
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/heroslider-3.jpg">
+
+  <style>
+    .card-slider {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: monospace;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 370px;
+      overflow: hidden;
+    }
+
+    .item {
+      position: absolute;
+      width: 200px;
+      height: 320px;
+      text-align: justify;
+      background-color: #A07E55;
+      border-radius: 10px;
+      padding: 5px;
+      transition: 0.5s;
+      left: calc(50% - 110px);
+      top: 0;
+      cursor: pointer;
+    }
+
+    #b-next {
+      position: absolute;
+      right: 50px;
+      top: 40%;
+    }
+
+    #b-prev {
+      position: absolute;
+      left: 50px;
+      top: 40%;
+    }
+
+    #b-prev,
+    #b-next {
+      color: #2D1E16;
+      background: none;
+      border: none;
+      font-size: xxx-large;
+      font-family: monospace;
+      font-weight: bold;
+      opacity: 0.5;
+      transition: opacity 0.5s;
+    }
+
+    #b-prev:hover,
+    #b-next:hover {
+      opacity: 1;
+    }
+
+    /* Add styles for the slide content */
+    .slide-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Add styles for the image */
+    .slide-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Add styles for the dark overlay */
+    .overlay {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Adjust the alpha value for the desired darkness */
+    }
+
+    /* Add styles for the text content */
+    .text-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      /* Dark background */
+      color: #fff;
+      /* Text color */
+      z-index: 3;
+      /* Ensure it's above the image */
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+
+    /* Add styles for the text inside the text content */
+    .text-content h1 {
+      font-size: 2rem;
+    }
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ANDHRA DINING</p>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <p style="font-size: 30px;">ANDHRA DINING</p>
+        <!-- <img src="./assets/images/logo.svg1" width="160" height="50" alt="AP - Home"> -->
+      </a>
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <!-- 
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a> -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="branches.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Branches</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="ayurveda.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Ayurveda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Gallery</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Reservation</span>
+
+        <span class="text text-2" aria-hidden="true">Reservation</span>
+      </a>
+
+      <!-- <a href="#" class="menu-text">
+        <span class="text-3">Menu</span>
+      </a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="padding-right: 100px; top:55%">
+              For the love of <br>
+              delicious food
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="top:55%">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn b-prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn b-next" aria-label="slide to b-next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <!-- book a table corner image  -->
+        <!-- <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a> -->
+
+      </section>
+
+
+      <section class="section event" aria-label="event">
+        <div class="container">
+          <h2 class="section-subtitle-2 label-2-0 text-center">Branches </h2>
+          <h2 class="headline-1 section-title text-center items-center">Indulge in Exotic Delights, Right Here in Tokyo
+          </h2>
+
+          <div class="card-slider">
+            <div class="slider">
+              <div class="slider">
+                <div class="item" id="branch1" onclick="navigateToBranchMenu('branch1')">
+                  <div class="slide-content">
+                    <img src="assets/images/1.jpg" alt="Slide 1 Image">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                      <h1>Andhra Dining Ginza</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" id="branch2" onclick="navigateToBranchMenu('branch2')">
+                  <div class="slide-content">
+                    <img src="assets/images/2.jpg" alt="Slide 1 Image">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                      <h1>Andhra Dining Shibuya</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" id="branch3" onclick="navigateToBranchMenu('branch3')">
+                  <div class="slide-content">
+                    <img src="assets/images/6.jpg" alt="Slide 1 Image">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                      <h1>Andhra Dining Daimon</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" id="branch4" onclick="navigateToBranchMenu('branch4')">
+                  <div class="slide-content">
+                    <img src="assets/images/4.jpg" alt="Slide 1 Image">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                      <h1>Andhra Kitchen Okachimachi</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" id="branch5" onclick="navigateToBranchMenu('branch5')">
+                  <div class="slide-content">
+                    <img src="assets/images/5.jpg" alt="Slide 1 Image">
+                    <div class="overlay"></div>
+                    <div class="text-content">
+                      <h1>Andhra Cafe Komatsugawa</h1>
+                    </div>
+                  </div>
+                </div>
+
+                <button id="b-next">></button>
+                <button id="b-prev">
+                  <</button>
+              </div>
+            </div>
+
+
+
+          </div>
+      </section>
+
+      <!-- 
+- #FEATURES
+-->
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle-2 label-2-0 text-center">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <div class="footer">
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>Andhra<span> Dining</span></h3>
+            <p class="footer-links">
+              <a href="#" class="link-1">Home</a>
+              <a href="#">Blog</a>
+              <a href="#">Pricing</a>
+              <a href="#">About</a>
+              <a href="#">Faq</a>
+              <a href="#">Contact</a>
+            </p>
+            <div class="flex flex-row justify-start items-start my-10 gap-10 text-black">
+              <p>logo1</p>
+              <p>logo2</p>
+              <p>logo3</p>
+            </div>
+            <p class="footer-company-name">Andhra Dining © 2024</p>
+          </div>
+          <div class="footer-center">
+            <!-- <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1.555.555.5555</p>
+            </div> -->
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>About the company</span>
+              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+              vehicula sit amet.
+            </p>
+            <div class="footer-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <script src="./assets/js/script.js"></script>
+      <!-- 
+  - ionicon link
+-->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
